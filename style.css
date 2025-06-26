@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-out;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.birthday-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 30px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.birthday-card h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.birthday-card p {
+    margin: 8px 0;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.confirm-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #ff69b4;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.confirm-button:hover {
+    background-color: #ffe4ec;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
